@@ -12,10 +12,8 @@ Cualquier persona puede crear una copia de este geovisor y publicar su propio ma
 Un "Fork" crea una copia idéntica de este repositorio bajo tu propia cuenta de GitHub para que puedas realizar cambios de manera independiente.
 1. Inicia sesión en tu cuenta de [GitHub](https://github.com).
 2. Ve al repositorio original: [https://github.com/copernicuscentroamerica/geovisor](https://github.com/copernicuscentroamerica/geovisor).
-3. Haz clic en el botón **Fork** en la esquina superior derecha.
-4. Define el propietario (tu cuenta de usuario) y el nombre del repositorio (por ejemplo: `mi-geovisor`).
-5. > [!IMPORTANT]
-   > Asegúrate de **desmarcar** la opción *'Copy the main branch only'* si deseas descargar todas las versiones y ramas disponibles (incluyendo la rama `limpio` si estás usando la versión simplificada del Geovisor).
+3. Haz clic en el botón **Fork** en la esquina superior derecha y selecciona **Crear un nuevo fork**.
+4. Define el propietario (tu cuenta de usuario) y el nombre del repositorio (por ejemplo: `geovisor`).
 6. Haz clic en el botón verde **Create fork** en la parte inferior para iniciar el proceso de clonación.
 
 ### 🗑️ Paso 2: Eliminar las Capas de Ejemplo
@@ -28,14 +26,14 @@ Para evitar que se muestren las capas de ejemplo predeterminadas en tu mapa, deb
    - En el cuadro que se despliega, haz clic en **Commit changes** (Confirmar cambios) para guardar.
 
 ### 📤 Paso 3: Subir tus Propias Capas de Datos
+> [!TIP]
+> Si tienes tus capas en formatos tradicionales como Shapefile (.shp), KML o GPX, puedes utilizar la herramienta web gratuita [Mapshaper](https://mapshaper.org/) (cuyo enlace directo está integrado en el panel de capas del geovisor) para convertirlas a GeoJSON antes de subirlas.
+
 Ahora puedes cargar tus archivos geográficos a la carpeta de datos:
 1. Asegúrate de estar dentro de la carpeta `data/` (o [data/](data/)) en tu repositorio en GitHub.
 2. Haz clic en el botón **Add file** (Añadir archivo) en la esquina superior derecha y selecciona **Upload files** (Subir archivos).
 3. Arrastra y suelta tus propios archivos espaciales en formato **GeoJSON** o **JSON** (por ejemplo: `mis_capas_locales.json`).
 4. Haz clic en el botón verde **Commit changes** al final de la página para guardar los archivos cargados.
-
-> [!TIP]
-> Si tienes tus capas en formatos tradicionales como Shapefile (.shp), KML o GPX, puedes utilizar la herramienta web gratuita [Mapshaper](https://mapshaper.org/) (cuyo enlace directo está integrado en el panel de capas del geovisor) para convertirlas a GeoJSON antes de subirlas.
 
 ### ⚙️ Paso 4: Modificar el Archivo de Configuración
 Debes registrar tus nuevas capas en el archivo de configuración para que el geovisor las reconozca y las dibuje en el mapa:
