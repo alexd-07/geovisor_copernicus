@@ -1,18 +1,19 @@
 {
-  "titulo_geovisor": "Geovisor Mesoamérica",
+  "titulo_geovisor": "Geovisor_copernicus",
   "autor_desarrollador": "AFOLU Copernicus",
   
   // Mapa base por defecto. Descomenta SOLO UNO de los siguientes valores:
-  "mapa_base_defecto": "dark",
+  //"mapa_base_defecto": "dark",
   // "mapa_base_defecto": "light",
   // "mapa_base_defecto": "google_streets",
-  // "mapa_base_defecto": "google_satellite",
+  "mapa_base_defecto": "google_satellite",
   // "mapa_base_defecto": "google_hybrid",
 
   // Lista de archivos GeoJSON/JSON en la carpeta data/ que se cargarán automáticamente.
   // Es muy útil para despliegue estático (como GitHub Pages) donde no se pueden escanear carpetas dinámicamente:
   "capas_a_cargar": [
     "Areas_Protegidas_corte.json",
-    "Limite_ZonaEstudio.json"
+    "Limite_ZonaEstudio.json",
+    "rio_platano.json"
   ]
 }
